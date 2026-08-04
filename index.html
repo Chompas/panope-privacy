@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panope — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #55606b;
+    --rule: #e2e6ea;
+    --accent: #1f7aad;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0e12;
+      --fg: #e8ecf1;
+      --muted: #9aa6b2;
+      --rule: #232a31;
+      --accent: #6fc3ec;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+  h1 {
+    font-size: 1.7rem;
+    margin: 0 0 4px;
+  }
+  .updated {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 40px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin: 40px 0 12px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 8px;
+  }
+  p, li { color: var(--fg); }
+  ul { padding-left: 1.3em; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th { color: var(--muted); font-weight: 600; }
+  code {
+    background: var(--rule);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Panope — Privacy Policy</h1>
+  <p class="updated">Last updated: August 4, 2026</p>
+
+  <p>
+    Panope is a personal dive logbook app. It has no company, no user
+    accounts, and no server of its own — it's built and maintained by an
+    individual developer. This page explains what the app does with your
+    information.
+  </p>
+
+  <h2>What the app stores</h2>
+  <p>Everything you log lives in two places, both under your own control:</p>
+  <ul>
+    <li>On your device, in the app's own local database.</li>
+    <li>In your own private iCloud account, so your logbook can sync
+      between your own devices. This uses Apple's CloudKit — the developer
+      has no access to this data; it sits in a private database tied to
+      your Apple ID.</li>
+  </ul>
+  <p>The developer does not operate a server, does not receive a copy of
+    your dive log, and cannot see your data.</p>
+
+  <h2>What the app collects</h2>
+  <table>
+    <tr><th>Data</th><th>Why</th></tr>
+    <tr>
+      <td>Dive details you enter — site, times, depth, water temperature,
+        notes, buddy/dive centre name</td>
+      <td>The core purpose of the app: your logbook</td>
+    </tr>
+    <tr>
+      <td>Location — coordinates you place for a dive site (never inferred
+        automatically from a site name)</td>
+      <td>Shown on the map, and used to look up sea/air conditions and a
+        site description for that location</td>
+    </tr>
+    <tr>
+      <td>Apple Health data — underwater diving workouts, depth, water
+        temperature, weather metadata</td>
+      <td>So your dives appear in Apple Health and Fitness, and so the app
+        can read existing dives already in Health (e.g. from a dive
+        computer or Apple Watch)</td>
+    </tr>
+  </table>
+  <p>
+    Health access is granted or denied through Apple's own permission
+    system, not by Panope — you can review or revoke it at any time in the
+    Health app, under Sharing → Apps.
+  </p>
+
+  <h2>Third-party services this app talks to</h2>
+  <p>
+    These requests carry only a coordinate and/or a site name — never your
+    name, account, or any other identifying information:
+  </p>
+  <ul>
+    <li><strong>Open-Meteo</strong> — sea-surface temperature and wave
+      height for a dive's coordinates and date.</li>
+    <li><strong>Apple WeatherKit</strong> — historical air temperature and
+      sky conditions for a dive's coordinates and date.</li>
+    <li><strong>Wikipedia / Wikimedia</strong> — a short article about a
+      dive site, when one exists near its coordinates.</li>
+    <li><strong>OpenStreetMap (Overpass API)</strong> — looking up dive
+      sites not already in the app's bundled offline catalogue.</li>
+    <li><strong>SSI (my.divessi.com)</strong> — if you choose to import
+      your SSI logbook, you sign in directly on SSI's own website inside
+      the app. Panope never sees your SSI password; it only reads the CSV
+      file you export.</li>
+  </ul>
+
+  <h2>What this app does not do</h2>
+  <ul>
+    <li>No advertising, no ad networks, no advertising identifiers</li>
+    <li>No analytics or usage tracking</li>
+    <li>No user accounts, sign-up, or login of its own</li>
+    <li>No selling or sharing of your data with third parties</li>
+  </ul>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Delete any dive, or all of them, from within the app at any time —
+      Settings has a "Delete all dives" option that also removes the
+      matching Apple Health workouts where possible.</li>
+    <li>Revoke Health access any time in the Health app under
+      Sharing → Apps.</li>
+    <li>Deleting the app removes its local data; deleting it and its
+      iCloud data (Settings → [your name] → iCloud → Manage Account
+      Storage) removes the synced copy too.</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>
+    Panope isn't directed at children and doesn't knowingly collect
+    information from anyone under 13.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes, the update will be posted on this same page
+    with a new "last updated" date.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy: open an issue at
+    <a href="https://github.com/Chompas">github.com/Chompas</a>.
+  </p>
+</main>
+</body>
+</html>
